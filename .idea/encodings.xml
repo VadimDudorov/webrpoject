@@ -5,8 +5,13 @@
     <file url="file://$PROJECT_DIR$/src/main/java/webproject/repository/spacecraftrep/prolog.jsp" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/main/java/webproject/repository/spacecraftrep/team.jsp" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/team.jsp" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/team.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/bridge.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/crew.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/crew.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/loss.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/nlo.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/prologue.jsp" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spacecraftweb/whoAreYou.jsp" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/index.jsp" charset="UTF-16" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 package webproject.service;
 
 public interface Service<T> {
-    T launch();
+    T launch(T ... params);
 }

@@ -1,13 +1,18 @@
 package webproject.repository.spacecraftrep;
 
 public enum SpaceCraftUrl {
-    TEAM("team","/WEB-INF/spacecraftweb/team.jsp");
+    PROLOGUE("/WEB-INF/spacecraftweb/crew.jsp"),
+    CREW("/WEB-INF/spacecraftweb/nlo.jsp"),
+    NLO("/WEB-INF/spacecraftweb/bridge.jsp"),
+    BRIDGE("/WEB-INF/spacecraftweb/whoAreYou.jsp"),
+    WHO_ARE_YOU("/WEB-INF/spacecraftweb/win.jsp"),
+    WIN("/WEB-INF/spacecraftweb/?.jsp"),
+    LOSS("/WEB-INF/spacecraftweb/loss.jsp");
 
     private String name;
     private String url;
 
-    SpaceCraftUrl(String name, String url) {
-        this.name = name;
+    SpaceCraftUrl(String url) {
         this.url = url;
     }
 

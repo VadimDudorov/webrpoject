@@ -13,12 +13,20 @@ import java.io.IOException;
 
 @WebServlet(name = "SpaceCraftController", value = "/spaceCraft")
 public class SpaceCraftController extends HttpServlet {
+    private SpaceCraftService craftService;
+    private final String paramHtml = "params";
+    private final String paramName = "name";
+    @Override
+    public void init() throws ServletException {
+        this.craftService = new SpaceCraftService();
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String params = req.getParameter("param");
+        String params = req.getParameter(paramHtml);
+        String name = req.getParameter(paramName);
         ServletContext servletContext = getServletContext();
-        //TODO придумать логику по фабричному методу, сейчас doGet жестко завязан на SpaceCraftService
-        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher(new SpaceCraftService(params).launch());
+        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher(craftService.launch(params, name));
         requestDispatcher.forward(req, resp);
     }
 }
