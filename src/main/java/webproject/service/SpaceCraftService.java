@@ -14,12 +14,14 @@ public class SpaceCraftService implements Service<String> {
         SpaceCraftUrl enumSpaceCraft = SpaceCraftUrl.valueOf(params[0].toUpperCase());
 
         return switch (enumSpaceCraft) {
+            case START -> START.getUrl();
             case PROLOGUE -> PROLOGUE.getUrl();
             case CREW -> CREW.getUrl();
             case NLO -> NLO.getUrl();
             case BRIDGE -> BRIDGE.getUrl();
             case WHO_ARE_YOU -> WHO_ARE_YOU.getUrl();
             case LOSS -> LOSS.getUrl();
+            case WIN -> WIN.getUrl();
             default -> throw new IllegalStateException("По переданному параметру: " + params[0] + " нет существующих страниц");
         };
     }
