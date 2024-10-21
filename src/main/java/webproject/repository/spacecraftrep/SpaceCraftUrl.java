@@ -8,7 +8,7 @@ public enum SpaceCraftUrl {
     BRIDGE("/WEB-INF/spacecraftweb/whoAreYou.jsp"),
     WHO_ARE_YOU("/WEB-INF/spacecraftweb/win.jsp"),
     LOSS("/WEB-INF/spacecraftweb/loss.jsp"),
-    WIN("/index.jsp");
+    WIN("/main.jsp");
 
     private String name;
     private String url;
