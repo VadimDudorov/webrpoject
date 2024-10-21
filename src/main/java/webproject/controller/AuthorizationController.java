@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import webproject.service.AuthorizationService;
 import webproject.service.SpaceCraftService;
 
@@ -20,6 +21,10 @@ public class AuthorizationController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String login = req.getParameter(paramLogin);
         String password = req.getParameter(paramPassword);
+
+        HttpSession httpSession = req.getSession();
+        httpSession.setAttribute("login", login);
+
         ServletContext servletContext = getServletContext();
         RequestDispatcher requestDispatcher = servletContext.
                 getRequestDispatcher(AuthorizationService.getAuthorizationService().launch(login, password));
